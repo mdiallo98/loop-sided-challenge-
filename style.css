@@ -1,7 +1,17 @@
+body {
+  box-sizing: border-box;
+}
+
 .cards-container {
   /* height: 7000px; */
   /* width: auto; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 5px 6px;
+}
+
+header img {
+  width: 100vw;
+  height: max-content;
+  object-fit: cover;
 }
