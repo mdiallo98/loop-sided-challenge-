@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans&family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
 :root {
   --white: hsl(0, 0%, 100%);
   --Black: hsl(0, 0%, 0%);
@@ -20,6 +20,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: var(--white);
 }
 /*************************************** 
 ========================================
@@ -54,16 +55,37 @@ Header/Navsection
 .header-container nav {
   margin-right: 5rem;
   margin-top: 2rem;
-
   position: absolute;
   top: 8px;
   right: 16px;
 }
 .header-container ul {
-  background-color: red;
   display: flex;
   flex-direction: row;
   list-style-type: none;
+  font-family: var(--fontfamilyAlata);
+}
+.li {
+  margin: 0 10px;
+}
+
+.header-intro {
+  position: absolute;
+  top: 50%;
+  color: var(--white);
+  left: 30%;
+  font-family: var(--fontfamilyJosefin);
+  transform: translate(-50%, -50%);
+  border: 2px solid;
+  padding: 3.5rem;
+  font-size: 40px;
+  font-weight: 100;
+  text-transform: uppercase;
+  border-color: var(--white);
+}
+.header-listItem li {
+  margin: 0 10px;
+  color: var(--white);
 }
 /******************************************* 
 =============================================
